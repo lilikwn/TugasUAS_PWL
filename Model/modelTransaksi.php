@@ -21,9 +21,9 @@ class modelTransaksi
         $query = "SELECT * FROM transaksi where id_transaksi='$id_transaksi'";
         return $this->execute($query);
     }
-    function updateTransaksi($id_transaksi, $no_ktp, $no_plat, $tanggal_sewa, $lama_sewa, $total)
+    function updateTransaksi($no_ktp, $no_plat, $tanggal_sewa, $lama_sewa, $total)
     {
-        $query = "UPDATE transaksi SET id_transaksi='$id_transaksi', no_ktp='$no_ktp', no_plat='$no_plat', alamat='$tanggal_sewa', lama_sewa='$lama_sewa', total_harga=$total";
+        $query = "UPDATE transaksi SET no_ktp='$no_ktp', no_plat='$no_plat', alamat='$tanggal_sewa', lama_sewa='$lama_sewa', total_harga=$total";
         return $this->execute($query);
     }
 
@@ -33,9 +33,9 @@ class modelTransaksi
         return $this->execute($query);
     }
 
-    function insertTransaksi($id_transaksi, $no_ktp, $no_plat, $tanggal_sewa, $lama_sewa, $total)
+    function insertTransaksi($no_ktp, $no_plat, $tanggal_sewa, $lama_sewa, $total)
     {
-        $query = "INSERT INTO Transaksi VALUES ('$id_transaksi', '$no_ktp', '$no_plat', '$tanggal_sewa', '$lama_sewa', $total)";
+        $query = "INSERT INTO Transaksi VALUES ('$no_ktp', '$no_plat', '$tanggal_sewa', '$lama_sewa', $total)";
         return $this->execute($query);
     }
 

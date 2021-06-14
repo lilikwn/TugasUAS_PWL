@@ -18,7 +18,7 @@ class modelMobil
     }
     function selectMobil($nama)
     {
-        $query = "SELECT * FROM mobil where nama='$nama'";
+        $query = "SELECT * FROM mobil where nama='$nama' OR no_plat='$nama'";
         return $this->execute($query);
     }
     function updateMobil($plat, $nama, $merk, $tarif)

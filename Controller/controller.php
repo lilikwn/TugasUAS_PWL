@@ -21,7 +21,8 @@
             $data = $this->modelMobil->selectAllMobil();
             include 'view/view_mobil.php';
         }
+        function ViewPesan(){
+            include_once "view/view_pesan.php";
+        }
     
     }
-
-?>
