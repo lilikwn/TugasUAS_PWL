@@ -8,7 +8,7 @@ $mobil = new modelMobil;
 if (isset($_POST["submit"])) {
     $plat = $_POST["plat"];
     $date = "";
-    $namaMobil = $_POST["nama-mobil"];
+    $namaMobil = $_POST["nama_mobil"];
     $merk = $_POST["merk"];
     $lama_sewa = $_POST["lama-sewa"];
     $tarif = $_POST["tarif"];
@@ -49,19 +49,19 @@ if (isset($_POST["submit"])) {
                     <div class="form-group row">
                         <label for="nama-mobil" class="col-sm-3 col-form-label">Nama Mobil</label>
                         <div class="col-sm-9">
-                            <input name="nama_mobil" type="text" class="form-control" id="nama-mobil" placeholder="Nama Mobil" disabled>
+                            <input name="nama_mobil" type="text" class="form-control" id="nama-mobil" placeholder="Nama Mobil" readonly>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="nik" class="col-sm-3 col-form-label">Merk</label>
                         <div class="col-sm-9">
-                            <input name="merk" type="text" class="form-control" id="merk" placeholder="Merk Mobil" disabled>
+                            <input name="merk" type="text" class="form-control" id="merk" placeholder="Merk Mobil" readonly>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="nama" class="col-sm-3 col-form-label">Tarif</label>
                         <div class="col-sm-9">
-                            <input name="tarif" type="number" class="form-control" id="tarif" placeholder="Tarif Sewa Per Hari" disabled>
+                            <input name="tarif" type="number" class="form-control" id="tarif" placeholder="Tarif Sewa Per Hari" readonly>
                         </div>
                     </div>
                     <div class="form-group row">
